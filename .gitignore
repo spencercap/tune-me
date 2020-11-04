@@ -3,3 +3,4 @@ node_modules
 dist
 *.local
 .firebase/hosting.*.cache
+.nova
