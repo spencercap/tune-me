@@ -1,5 +1,4 @@
 <template>
-	<!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
 	<h3>
 		<span>Scan w the Spotify app</span>
 		<br />
