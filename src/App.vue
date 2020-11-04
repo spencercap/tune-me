@@ -1,6 +1,17 @@
 <template>
-	<img alt="Vue logo" src="./assets/logo.png" />
-	<HelloWorld msg="Hello Vue 3.0 + Vite" />
+	<!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
+	<h3>
+		<span>Scan w the Spotify app</span>
+		<br />
+		<span style="font-size: 0.8em;">Find some music</span>
+	</h3>
+
+	<div style="max-width: 300px; font-size: 13px; padding-bottom: 36px;">
+		can we discover music by randomly generating spotify codes? call it modern crate digging with a blindfold on.
+		go try and find a code that can be scanned!
+	</div>
+	<!-- <HelloWorld msg="Hello Vue 3.0 + Vite" /> -->
+	<SpotCode />
 </template>
 
 
@@ -10,7 +21,8 @@ import { defineAsyncComponent, defineComponent } from 'vue';
 export default defineComponent({
 	name: 'App',
 	components: {
-		HelloWorld: defineAsyncComponent(() => import('./components/HelloWorld.vue'))
+		HelloWorld: defineAsyncComponent(() => import('./components/HelloWorld.vue')),
+		SpotCode: defineAsyncComponent(() => import('./components/SpotCode.vue'))
 	},
 	data() {
 		return {
@@ -28,5 +40,10 @@ export default defineComponent({
 	text-align: center;
 	color: #2c3e50;
 	margin-top: 60px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 </style>
