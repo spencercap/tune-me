@@ -15,6 +15,13 @@
 	</div>
 	<!-- <HelloWorld msg="Hello Vue 3.0 + Vite" /> -->
 	<SpotCode />
+
+	<div class="by">
+		<span>by &nbsp;</span>
+		<a href="https://github.com/spencercap/" target="_blank">
+			@spencercap
+		</a>
+	</div>
 </template>
 
 <script lang="ts">
@@ -52,5 +59,13 @@ export default defineComponent({
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.by {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 0.5em 1em;
+	font-size: 12px;
 }
 </style>

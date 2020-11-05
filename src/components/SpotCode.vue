@@ -238,7 +238,7 @@ export default defineComponent({
 		},
 
 		setRandomCodeBg() {
-			const COLOR_MIN = 160;
+			const COLOR_MIN = 130;
 			const COLOR_MAX = 255;
 			const r = map_range(Math.random(), 0, 1, COLOR_MIN, COLOR_MAX);
 			const g = map_range(Math.random(), 0, 1, COLOR_MIN, COLOR_MAX);

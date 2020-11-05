@@ -3,7 +3,8 @@
 	"version": "0.0.0",
 	"scripts": {
 		"serve": "vite",
-		"build": "vite build"
+		"build": "vite build",
+		"deploy": "firebase deploy"
 	},
 	"dependencies": {
 		"vue": "^3.0.2"
