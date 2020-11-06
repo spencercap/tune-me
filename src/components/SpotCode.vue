@@ -35,9 +35,11 @@
 			y="0"
 			width="400"
 			height="100"
-			:fill="`rgb(${codeBg.r} ${codeBg.g} ${codeBg.b})`"
-			:style="`fill: rgb(${codeBg.r} ${codeBg.g} ${codeBg.b}) !important`"
+			:fill="`hsl(${codeBg.h}deg 100% 50%)`"
+			:style="`fill: hsl(${codeBg.h}deg 100% 50%) !important`"
 		/>
+		<!-- :fill="`hsl(${codeBg.r} ${codeBg.g} ${codeBg.b})`"
+		:style="`fill: rgb(${codeBg.r} ${codeBg.g} ${codeBg.b}) !important`" -->
 		<rect
 			v-for="(bar, i) in currentTrackBars"
 			:key="i"
@@ -173,6 +175,7 @@ export default defineComponent({
 			] as { x: number; y: number; w: number; h: number }[],
 
 			codeBg: {
+				h: 53, // hue
 				r: '255',
 				g: '255',
 				b: '255',
@@ -244,10 +247,14 @@ export default defineComponent({
 			const g = map_range(Math.random(), 0, 1, COLOR_MIN, COLOR_MAX);
 			const b = map_range(Math.random(), 0, 1, COLOR_MIN, COLOR_MAX);
 
+			const h = Math.floor(Math.random() * 259);
+
 			this.codeBg = {
 				r,
 				b,
 				g,
+
+				h,
 			};
 		},
 
