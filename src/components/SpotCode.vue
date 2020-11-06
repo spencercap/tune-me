@@ -59,7 +59,7 @@
 		</g>
 	</svg>
 
-	<button class="refreshButton" @click="getRandomSong()">↻</button>
+	<button class="refreshButton" @click="getRandomSong()">🎈</button>
 </template>
 
 <script lang="ts">
@@ -374,8 +374,15 @@ export default defineComponent({
 	width: 45px;
 	height: 45px;
 	font-size: 32px;
-	border-radius: 50%;
-	margin: 36px 0;
+	background: #fff;
+	border-radius: 4px;
+	border: 2px solid #000;
+	margin: 24px 0;
+	/* margin-bottom: 16px; */
+	cursor: pointer;
+}
+.refreshButton:hover {
+	box-shadow: 2px 2px 0 #000;
 }
 .refreshButton:active,
 .refreshButton:focus {
@@ -384,6 +391,7 @@ export default defineComponent({
 
 .spotCodeSvg {
 	border-radius: 6px;
+	margin-top: 64px;
 }
 
 rect {

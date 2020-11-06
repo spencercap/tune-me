@@ -5,21 +5,24 @@
 		<span style="font-size: 0.8em">Find some music</span>
 	</h3>
 
-	<div
-		v-if="hello"
-		style="max-width: 300px; font-size: 13px; padding-bottom: 36px"
-	>
-		can we discover music by randomly generating Spotify codes? call it
-		modern crate digging with a blindfold on. go try and find a code that
-		can be scanned!
-	</div>
 	<!-- <HelloWorld msg="Hello Vue 3.0 + Vite" /> -->
 	<SpotCode />
 
+	<div
+		v-if="hello"
+		style="max-width: 300px; font-size: 13px; padding: 36px 0"
+	>
+		discover music from randomly generated Spotify codes - call it modern
+		crate digging.
+		<br />
+		<br />
+		<span style="font-size: 2em">🤷🏽‍♂️</span>
+	</div>
+
 	<div class="by">
-		<span>by &nbsp;</span>
-		<a href="https://github.com/spencercap/" target="_blank">
-			@spencercap
+		<span>✏️ &nbsp;</span>
+		<a href="https://github.com/spencercap/tune-me" target="_blank"
+			>@spencercap
 		</a>
 	</div>
 </template>
@@ -48,6 +51,7 @@ export default defineComponent({
 
 <style>
 #app {
+	/* font-family: 'Benton Sans', Helvetica, Sans-serif; */
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
