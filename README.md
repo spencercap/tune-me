@@ -3,6 +3,10 @@ grab a random tune off spotify
 
 [demo!](https://tune-me-right.web.app/)
 
+inspo + help:
+- https://medium.com/@perryjanssen/getting-random-tracks-using-the-spotify-api-61889b0c0c27
+- https://stackoverflow.com/questions/29379603/spotify-api-get-random-songs
+
 ## install
 ```
 npm i
